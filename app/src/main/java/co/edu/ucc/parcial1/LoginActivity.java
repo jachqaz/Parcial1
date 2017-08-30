@@ -1,5 +1,6 @@
 package co.edu.ucc.parcial1;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -33,5 +34,11 @@ public class LoginActivity extends AppCompatActivity {
         String apellido = L_txtApellido.getText().toString();
         String direccion = L_txtDireccion.getText().toString();
         String email = L_txtEmail.getText().toString();
+        Intent intent=new Intent(LoginActivity.this,PrincipalActivity.class);
+        intent.putExtra("nombre",nombre);
+        intent.putExtra("apellido",apellido);
+        intent.putExtra("direccion",direccion);
+        intent.putExtra("email",email);
+        startActivity(intent);
     }
 }
