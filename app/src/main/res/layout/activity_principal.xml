@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="co.edu.ucc.parcial1.LoginActivity">
+    tools:context="co.edu.ucc.parcial1.PrincipalActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,49 +19,43 @@
             android:layout_weight="0.4"
             android:src="@mipmap/ic_launcher" />
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.5"
             android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/L_txtNomUsuario"
+            <TextView
+                android:id="@+id/P_txtNomUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:hint="@string/nombre"
-                android:inputType="text" />
+                android:textSize="30sp"
+                android:hint="@string/nombre" />
 
-            <EditText
-                android:id="@+id/L_txtApellido"
+            <TextView
+                android:id="@+id/P_txtApellido"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/apellido"
-                android:inputType="text" />
+                android:textSize="30sp"
+                android:layout_marginTop="10dp"/>
 
-            <EditText
-                android:id="@+id/L_txtDireccion"
+            <TextView
+                android:id="@+id/P_txtDireccion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                android:textSize="30sp"
                 android:hint="@string/direccion"
-                android:inputType="text" />
+                android:layout_marginTop="10dp"/>
 
-            <EditText
-                android:id="@+id/L_txtEmail"
+            <TextView
+                android:id="@+id/P_txtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/email"
-                android:inputType="textEmailAddress" />
-
+                android:textSize="30sp"
+                android:layout_marginTop="10dp"/>
         </LinearLayout>
-
-        <Button
-            android:id="@+id/L_btnIngresar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/ingresar" />
     </LinearLayout>
 </FrameLayout>
